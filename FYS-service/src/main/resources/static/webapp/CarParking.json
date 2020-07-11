@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "geoTag": 1,
+    "parkingRow": 1,
+    "state": "VACANT",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 2,
+    "geoTag": 2,
+    "parkingRow": 1,
+    "state": "OCCUPIED",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 3,
+    "geoTag": 3,
+    "parkingRow": 1,
+    "state": "OCCUPIED",
+    "sizeOfSlot": "S",
+    "reservedType": "PREGNANT"
+  },
+  {
+    "id": 4,
+    "geoTag": 4,
+    "parkingRow": 1,
+    "state": "VACANT",
+    "sizeOfSlot": "S",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 5,
+    "geoTag": 5,
+    "parkingRow": 1,
+    "state": "VACANT",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 6,
+    "geoTag": 6,
+    "parkingRow": 1,
+    "state": "OCCUPIED",
+    "sizeOfSlot": "S",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 7,
+    "geoTag": 7,
+    "parkingRow": 1,
+    "state": "VACANT",
+    "sizeOfSlot": "S",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 8,
+    "geoTag": 8,
+    "parkingRow": 2,
+    "state": "OCCUPIED",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 9,
+    "geoTag": 9,
+    "parkingRow": 2,
+    "state": "OCCUPIED",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 10,
+    "geoTag": 10,
+    "parkingRow": 2,
+    "state": "VACANT",
+    "sizeOfSlot": "M",
+    "reservedType": "GIFTED"
+  },
+  {
+    "id": 11,
+    "geoTag": 11,
+    "parkingRow": 2,
+    "state": "OCCUPIED",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 12,
+    "geoTag": 12,
+    "parkingRow": 2,
+    "state": "VACANT",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 13,
+    "geoTag": 13,
+    "parkingRow": 2,
+    "state": "VACANT",
+    "sizeOfSlot": "M",
+    "reservedType": "GENERAL"
+  },
+  {
+    "id": 14,
+    "geoTag": 14,
+    "parkingRow": 2,
+    "state": "VACANT",
+    "sizeOfSlot": "M",
+    "reservedType": "GIFTED"
+  }
+]

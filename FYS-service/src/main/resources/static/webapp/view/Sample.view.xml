@@ -1,0 +1,7 @@
+<mvc:View
+		controllerName="sap.fys.slots.controller.Sample"
+		xmlns:l="sap.ui.layout"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m">
+	<Button text="{i18n>COMMON_Ok}" press="ok" />
+</mvc:View>

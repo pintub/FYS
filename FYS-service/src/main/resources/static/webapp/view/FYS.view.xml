@@ -1,0 +1,82 @@
+<mvc:View controllerName="sap.fys.slots.controller.FYS"
+		  xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+		  xmlns:core="sap.ui.core" xmlns:f="sap.f"
+		  height="100%" xmlns:grid="sap.ui.layout.cssgrid" xmlns:fb="sap.ui.comp.filterbar">
+	<App>
+		<Page title="Find Your Sport">
+			<fb:FilterBar reset="onReset" search="onSearch" useToolbar="false" showFilterConfiguration="false"
+						  showRestoreButton="true" showClearButton="true" searchEnabled="true"
+						  class="sapUiMediumMarginTop">
+				<fb:filterGroupItems>
+					<fb:FilterGroupItem groupName="__$INTERNAL$" name="A" label="Reserved Parking For" partOfCurrentVariant="false"
+										visibleInFilterBar="true">
+						<fb:control>
+							<ComboBox id="reservedType" placeholder="Select All...">
+								<core:Item key="GENERAL" text="General" />
+								<core:Item key="GIFTED" text="Gifted" />
+								<core:Item key="PREGNANT" text="Pregnant Women" />
+							</ComboBox>
+						</fb:control>
+					</fb:FilterGroupItem>
+					<fb:FilterGroupItem groupName="__$INTERNAL$" name="B" label="Vehicle Type" partOfCurrentVariant="false"
+										visibleInFilterBar="true">
+						<fb:control>
+							<ComboBox id="vehicleSize" placeholder="Select All...">
+								<core:Item key="S" text="Micro" />
+								<core:Item key="M" text="Sedan" />
+								<core:Item key="L" text="SUV" />
+								<core:Item key="XL" text="MiniVan" />
+							</ComboBox>
+						</fb:control>
+					</fb:FilterGroupItem>
+				</fb:filterGroupItems>
+			</fb:FilterBar>
+			<f:GridList id="gridList1"
+						items="{ path: 'Parking>/',
+					filters: [{path: 'parkingRow', operator: 'EQ', value1: '1'}] }"
+						class="sapUiLargeMarginBegin sapUiLargeMarginTop sapUiLargeMarginBottom">
+				<f:customLayout>
+					<grid:ResponsiveColumnLayout />
+				</f:customLayout>
+				<f:GridListItem >
+					<HBox >
+						<core:Icon alt='{Parking>id}' src="sap-icon://car-rental"
+								   backgroundColor="{= ${Parking>state} === 'VACANT' ? 'green' : 'grey' }"
+								   size="100px" press=".navigate" useIconTooltip="true"
+								   tooltip="Parking Row: {Parking>parkingRow} &#10;Parking Number: {Parking>id} &#10;Reservation Type: {Parking>reservedType} &#10;Slot Size: {Parking>sizeOfSlot} &#10;"/>
+					</HBox>
+				</f:GridListItem>
+			</f:GridList>
+			<HBox>
+				<core:Icon src="sap-icon://arrow-left" size="100px"
+						   class="sapUiLargeMarginBegin sapUiLargeMarginEnd" />
+				<core:Icon src="sap-icon://arrow-left" size="100px"
+						   class="sapUiLargeMarginEnd" />
+				<core:Icon src="sap-icon://arrow-left" size="100px"
+						   class="sapUiLargeMarginEnd" />
+				<core:Icon src="sap-icon://arrow-left" size="100px"
+						   class="sapUiLargeMarginEnd" />
+				<core:Icon src="sap-icon://arrow-left" size="100px"
+						   class="sapUiLargeMarginEnd" />
+				<core:Icon src="sap-icon://arrow-left" size="100px"
+						   class="sapUiLargeMarginEnd" />
+			</HBox>
+			<f:GridList id="gridList2"
+						items="{ path: 'Parking>/',
+					filters: [{path: 'parkingRow', operator: 'EQ', value1: '2'}] }"
+						class="sapUiLargeMarginBegin sapUiLargeMarginTop sapUiLargeMarginBottom">
+				<f:customLayout>
+					<grid:ResponsiveColumnLayout />
+				</f:customLayout>
+				<f:GridListItem>
+					<HBox>
+						<core:Icon alt='{Parking>id}' src="sap-icon://car-rental"
+								   backgroundColor="{= ${Parking>state} === 'VACANT' ? 'green' : 'grey' }"
+								   size="100px" press=".navigate" useIconTooltip="true"
+								   tooltip="Parking Row: {Parking>parkingRow} &#10;Parking Number: {Parking>id} &#10;Reservation Type: {Parking>reservedType} &#10;Slot Size: {Parking>sizeOfSlot} &#10;"/>
+					</HBox>
+				</f:GridListItem>
+			</f:GridList>
+		</Page>
+	</App>
+</mvc:View>

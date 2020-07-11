@@ -1,0 +1,78 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "sap.fys.slots",
+		"type": "application",
+		"i18n": "i18n/messagebundle.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		},
+		"dataSources" : {
+			"car_parking": {
+				"uri": "CarParking.json",
+				"type": "JSON"
+			}
+		}
+		},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "sap.fys.slots.view.FYS",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.fys.slots.i18n.messagebundle"
+				}
+			},
+			"Parking": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings" : {
+					"defaultBindingMode":"TwoWay"
+				}
+			}
+		},
+		"resources": {
+		}
+	}
+}

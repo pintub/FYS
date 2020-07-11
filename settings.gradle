@@ -1,0 +1,4 @@
+rootProject.name = 'FYS'
+
+include 'FYS-service'
+include 'FYS-camera-feed-processing-service'
